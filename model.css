@@ -1,0 +1,88 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal.open{
+    display: flex;
+  }
+  .modal-container {
+    position: relative;
+    background: rgb(240, 234, 234);
+    width: 600px;
+    min-height: 300px;
+    max-width: calc(100%-32px);
+    animation: modalFadeIn ease.6s;
+  }
+  .modal-header {
+    background: rgb(38, 178, 77);
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+  }
+  .modal-close {  
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .modal-close:hover {
+    opacity: 1;
+    background: #6293ab;
+  }
+  .modal-boddy{
+    padding: 14px;
+  }
+  .modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+  
+  }
+  .modal-input {
+   margin-bottom: 24px;
+   border : 1px solid #ccc;
+   width: 100%;
+   padding: 15px;
+  }
+  #buy-tikets {
+    font-size: 15px;
+    padding: 18px;
+    background: #1d8e4a;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+  }
+  #buy-tikets:hover {
+     opacity: 0.9;
+     background: #022d41;
+  }
+  .modal-footer {
+  padding: 16px;
+  text-align: right;
+  }
+  .modal-footer a {
+  color: rgb(17, 216, 84);
+  }
+  @keyframes modalFadeIn {
+    from{
+        opacity: 0;
+       transform:translateY(-140px);
+    }
+    to{
+        opacity: 1;
+       transform: translateY(0);
+    }
+  }
